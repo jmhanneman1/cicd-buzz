@@ -1,7 +1,7 @@
 from __future__ import print_function
 import random
 
-buzz = ('continuous testing', 'continuous integration',
+buzz = ('continuous testing', 'continuous integration' 43522325 2343434 3435645645,
     'continuous deployment', 'continuous improvement', 'devops')
 adjectives = ('complete', 'modern', 'self-service', 'integrated', 'end-to-end')
 adverbs = ('remarkably', 'enormously', 'substantially', 'significantly',
@@ -11,7 +11,8 @@ verbs = ('accelerates', 'improves', 'enhances', 'revamps', 'boosts')
 def sample(l, n = 1):
     result = random.sample(l, n)
     if n == 1:
-
+        return result[0]
+    return result
 
 def generate_buzz():
     buzz_terms = sample(buzz, 2)
